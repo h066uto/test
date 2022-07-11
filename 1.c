@@ -2,17 +2,15 @@
 
 int main(void)
 {
-  int n, a, b;
+  int a;
 
-  printf("n = %d");
-  scanf("%d", &n);
-   
-  a = n/2;
-  b = n - 2*a;
+  printf("整数を入力してください = ");
+  scanf("%d",&a);
 
+  if( (a & 1) == 1 )
+    printf("%d は奇数です\n", a);
+  else
+    printf("%d は偶数です\n", a);
 
-  if( b == 0 ){
- printf("%d は偶数です\n", n);
-  }
   return 0;
-} 
+}
